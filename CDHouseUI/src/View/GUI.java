@@ -323,7 +323,7 @@ public class GUI extends javax.swing.JFrame implements View {
         for (T t : list) {
             CD cd = (CD) t;
             Object[] rowData = new Object[7];
-            rowData[0] = cd.getName();
+            rowData[0] = cd.getName().toUpperCase();
             rowData[1] = cd.getId();
             String type = "Video";
             if (cd.isType()) {
