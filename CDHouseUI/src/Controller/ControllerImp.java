@@ -35,14 +35,9 @@ public class ControllerImp implements Action {
         this.updateGUI.action(this);
     }
 
-    public ArrayList<CD> listFound(String titile) {
-        return this.sv.listFound(titile);
-    }
-
     @Override
     public void actionPerformed(ActionEvent ae) {
         String actionCommand = ae.getActionCommand();
-        listFound("s");
         if (actionCommand.equalsIgnoreCase("add cd")) {
             this.addGui.setVisible(true);
             this.addGui.resetForm();
